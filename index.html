@@ -13,14 +13,15 @@
             padding: 0;
             background: linear-gradient(135deg, #FFB6C1, #F0E68C);
             color: #333;
+            scroll-behavior: smooth;  /* Smooth scrolling */
         }
         header {
             display: flex;
             align-items: center;
-            background: #FAF9F6;  /* Light beige */
-            color: #333;
+            background: #2C3E50;  /* Darker header */
+            color: #ecf0f1;
             padding: 20px;
-            border-bottom: 5px solid #E0D7C2;  /* Lighter border */
+            border-bottom: 5px solid #E0D7C2;
         }
         header img {
             width: 180px;
@@ -28,13 +29,17 @@
             border-radius: 50%;
             border: 4px solid white;
             margin-right: 20px;
+            transition: transform 0.3s ease; /* Hover effect */
+        }
+        header img:hover {
+            transform: scale(1.05);  /* Image zoom effect */
         }
         header div {
             flex: 1;
         }
         h1, h2 {
-            color: #2C3E50;
             font-weight: 700;
+            color: #ecf0f1;
         }
         .container {
             width: 90%;
@@ -42,24 +47,28 @@
             margin: 20px auto;
             padding: 20px;
             background: white;
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         section {
             margin-bottom: 20px;
-            padding: 15px;
+            padding: 20px;
             background: #f9f9f9;
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 1.5em;
+            color: #2C3E50;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         ul li {
-            margin: 5px 0;
+            margin: 10px 0;
             position: relative;
-            padding-left: 20px;
+            padding-left: 25px;
         }
         ul li::before {
             content: "★";
@@ -67,33 +76,28 @@
             position: absolute;
             left: 0;
         }
-        .skills ul li {
-            padding-left: 20px;
-            position: relative;
-        }
-        .skills ul li::before {
-            content: none;
-        }
         footer {
             text-align: center;
             padding: 15px;
-            background: #FAF9F6;  /* Lighter beige */
-            color: #333;
+            background: #2C3E50;
+            color: #ecf0f1;
             margin-top: 20px;
-            border-top: 5px solid #E0D7C2;  /* Lighter border */
+            border-top: 5px solid #E0D7C2;
         }
         .download-btn {
             display: inline-block;
-            background-color: #4CAF50;
+            background-color: #3498db;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 12px 24px;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: 500;
-            transition: background-color 0.3s ease;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .download-btn:hover {
-            background-color: #388E3C;
+            background-color: #2980b9;
+            transform: scale(1.05);  /* Button hover effect */
         }
         .linkedin-link {
             color: #0077B5;
@@ -103,6 +107,7 @@
         }
         .linkedin-link:hover {
             color: #005582;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -113,7 +118,7 @@
             <h1>Raanasukumar Muthyam</h1>
             <p>Senior Engineer, Solutions Automation and Test</p>
             <p>Email: rsk.muthyam@gmail.com | Phone: +91 949 325 9772</p>
-            <p><a href="https://www.linkedin.com/in/raanasukumar-muthyam" class="linkedin-link" target="_blank">LinkedIn Profile</a></p> <!-- Added LinkedIn link -->
+            <p><a href="https://www.linkedin.com/in/raanasukumar-muthyam" class="linkedin-link" target="_blank">LinkedIn Profile</a></p>
         </div>
     </header>
 
@@ -191,17 +196,15 @@
             </ul>
         </section>
 
-        <!-- Placeholder for download -->
         <section>
             <h2>Download My Resume</h2>
-            <a href="https://raw.githubusercontent.com/Raanasukumar/raanasukumar.github.io/9773c280bc3585c73a6bbe4a5dd0f8a15e3c1da7/docs/Raanasukumar_Resume.pdf
-" class="download-btn">Download PDF</a> <!-- Placeholder link for attachment -->
+            <a href="https://raw.githubusercontent.com/Raanasukumar/raanasukumar.github.io/9773c280bc3585c73a6bbe4a5dd0f8a15e3c1da7/docs/Raanasukumar_Resume.pdf" class="download-btn" download>Download PDF</a>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2025 Raanasukumar Muthyam</p>
-        <p><a href="https://www.linkedin.com/in/raanasukumar-muthyam" class="linkedin-link" target="_blank">LinkedIn Profile</a></p> <!-- Added LinkedIn link in footer -->
+        <p><a href="https://www.linkedin.com/in/raanasukumar-muthyam" class="linkedin-link" target="_blank">LinkedIn Profile</a></p>
     </footer>
 </body>
 </html>
