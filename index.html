@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raanasukumar Muthyam - Profile</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #f4f4f4, #dfe9f3);
             color: #333;
         }
         header {
+            display: flex;
+            align-items: center;
             background: #4CAF50;
             color: white;
-            padding: 20px 0;
-            text-align: center;
+            padding: 20px;
             border-bottom: 5px solid #388E3C;
         }
         header img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             border: 4px solid white;
-            margin-top: -75px;
+            margin-right: 20px;
+        }
+        header div {
+            flex: 1;
+        }
+        h1, h2 {
+            color: #2C3E50;
         }
         .container {
             width: 90%;
@@ -35,18 +44,34 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #2C3E50;
-        }
         section {
             margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         ul {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
         }
         ul li {
             margin: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        ul li::before {
+            content: "★";
+            color: #FFD700;
+            position: absolute;
+            left: 0;
+        }
+        .skills ul li {
+            padding-left: 20px;
+            position: relative;
+        }
+        .skills ul li::before {
+            content: none;
         }
         footer {
             text-align: center;
@@ -56,40 +81,29 @@
             margin-top: 20px;
             border-top: 5px solid #388E3C;
         }
-        .profile-image {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .profile-image img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 5px solid #4CAF50;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Raanasukumar Muthyam</h1>
-        <p>Senior Engineer, Solutions Automation and Test</p>
-        <p>Email: rsk.muthyam@gmail.com | Phone: +91 949 325 9772</p>
+        <img src="docs/profile_pic.png" alt="Profile Picture">
+        <div>
+            <h1>Raanasukumar Muthyam</h1>
+            <p>Senior Engineer, Solutions Automation and Test</p>
+            <p>Email: rsk.muthyam@gmail.com | Phone: +91 949 325 9772</p>
+        </div>
     </header>
 
     <div class="container">
-        <div class="profile-image">
-            <img src="docs/profile_pic.png" alt="Profile Picture">
-        </div>
-
         <section>
             <h2>Summary</h2>
             <ul>
-                <li>Experience in manual testing of ONU, CPE devices, with a good understanding of GPON, VLAN, IGMP, ARP protocols.</li>
-                <li>Proficient in automation using Python, TCL, Robot Framework, with better exposure to DevOps.</li>
-                <li>Skilled in infrastructure management with hypervisors and security vulnerability analysis.</li>
+                <li>Performed extensive manual testing of ONU and CPE devices, focusing on GPON, VLAN, IGMP, and ARP protocols.</li>
+                <li>Specialized in automation using Python, TCL, and Robot Framework, with a strong foundation in DevOps methodologies.</li>
+                <li>Proficient in managing infrastructure with hypervisors and conducting security vulnerability assessments.</li>
             </ul>
         </section>
 
-        <section>
+        <section class="skills">
             <h2>Skills</h2>
             <ul>
                 <li><strong>Scripting Languages:</strong> Python, Robot Framework, Groovy, TCL</li>
@@ -108,28 +122,28 @@
             <h2>Experience</h2>
             <h3>Software Engineer at ADTRAN Networks (Jan 2019 – Nov 2021)</h3>
             <ul>
-                <li>Set up functional and non-functional testbeds.</li>
-                <li>Conducted manual testing of DPU, ONT, and CPE devices.</li>
-                <li>Automated manual scenarios using Robot Framework and Python.</li>
-                <li>Developed Jenkins pipelines with Groovy and Python virtual environments.</li>
-                <li>Maintained virtualization infrastructure with Proxmox and VMware ESXi.</li>
-                <li>Analyzed security vulnerabilities using Nessus and Nmap.</li>
+                <li>Established and maintained both functional and non-functional testbeds for device testing.</li>
+                <li>Conducted detailed manual testing of DPU, ONT, and CPE devices.</li>
+                <li>Developed and executed automated test cases using Robot Framework and Python.</li>
+                <li>Designed and implemented Jenkins pipelines using Groovy and Python virtual environments.</li>
+                <li>Managed virtualization environments with Proxmox and VMware ESXi for team lab needs.</li>
+                <li>Performed security assessments using Nessus and Nmap, identifying critical vulnerabilities.</li>
             </ul>
 
             <h3>Network Engineer and Test Professional at OPENREACH (Nov 2021 – Mar 2023)</h3>
             <ul>
-                <li>Conducted network integration and conformance tests.</li>
-                <li>Resolved real-time field issues in live networks.</li>
-                <li>Automated test cases using TCL, Python, and Robot Framework.</li>
-                <li>Worked with DevOps tools such as GitLab, Nexus, SonarQube IQ, and Jenkins.</li>
+                <li>Led network integration and conformance tests for diverse environments.</li>
+                <li>Investigated and resolved real-time field issues in live network operations.</li>
+                <li>Automated complex test cases using TCL, Python, and Robot Framework.</li>
+                <li>Collaborated with DevOps tools like GitLab, Nexus, SonarQube IQ, and Jenkins for CI/CD pipelines.</li>
             </ul>
 
             <h3>Engineer, Solutions Automation at CALIX (Mar 2023 – Present)</h3>
             <ul>
-                <li>Automated tools and utilities using Python.</li>
-                <li>Developed test plans and automated testing in Robot Framework and Python.</li>
-                <li>Integrated automation processes with Bamboo, Bitbucket, Jenkins, and Sonatype Nexus.</li>
-                <li>Automated cloud-based applications using Restconf and Selenium.</li>
+                <li>Developed tools and utilities automation scripts using Python.</li>
+                <li>Created detailed test plans and automated solutions using Robot Framework and Python.</li>
+                <li>Integrated automation workflows with Bamboo, Bitbucket, Jenkins, and Sonatype Nexus.</li>
+                <li>Automated cloud-based applications utilizing Restconf and Selenium.</li>
             </ul>
         </section>
 
@@ -145,11 +159,11 @@
         <section>
             <h2>Achievements and Certifications</h2>
             <ul>
-                <li>Developed an educational blog used by multiple institutions.</li>
+                <li>Authored an educational blog adopted by multiple institutions for academic use.</li>
                 <li>Cisco Certified Entry Network Technician (CCENT).</li>
                 <li>Certified Ethical Hacker (Basic) by Linux Academy.</li>
                 <li>Linux Professional Institute Certificate II by Linux Academy.</li>
-                <li>Received accolades for CI/CD architecture optimization at ADTRAN.</li>
+                <li>Recognized for optimizing CI/CD architecture and developing internal utilities at ADTRAN.</li>
             </ul>
         </section>
     </div>
