@@ -11,16 +11,16 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #f4f4f4, #dfe9f3);
+            background: linear-gradient(135deg, #FFB6C1, #F0E68C);
             color: #333;
         }
         header {
             display: flex;
             align-items: center;
-            background: #4CAF50;
-            color: white;
+            background: #FAF9F6;  /* Light beige */
+            color: #333;
             padding: 20px;
-            border-bottom: 5px solid #388E3C;
+            border-bottom: 5px solid #E0D7C2;  /* Lighter border */
         }
         header img {
             width: 180px;
@@ -34,6 +34,7 @@
         }
         h1, h2 {
             color: #2C3E50;
+            font-weight: 700;
         }
         .container {
             width: 90%;
@@ -75,11 +76,33 @@
         }
         footer {
             text-align: center;
-            padding: 10px;
-            background: #4CAF50;
-            color: white;
+            padding: 15px;
+            background: #FAF9F6;  /* Lighter beige */
+            color: #333;
             margin-top: 20px;
-            border-top: 5px solid #388E3C;
+            border-top: 5px solid #E0D7C2;  /* Lighter border */
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #388E3C;
+        }
+        .linkedin-link {
+            color: #0077B5;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .linkedin-link:hover {
+            color: #005582;
         }
     </style>
 </head>
@@ -90,6 +113,7 @@
             <h1>Raanasukumar Muthyam</h1>
             <p>Senior Engineer, Solutions Automation and Test</p>
             <p>Email: rsk.muthyam@gmail.com | Phone: +91 949 325 9772</p>
+            <p><a href="https://www.linkedin.com/in/raanasukumar-muthyam" class="linkedin-link" target="_blank">LinkedIn Profile</a></p> <!-- Added LinkedIn link -->
         </div>
     </header>
 
@@ -166,10 +190,18 @@
                 <li>Recognized for optimizing CI/CD architecture and developing internal utilities at ADTRAN.</li>
             </ul>
         </section>
+
+        <!-- Placeholder for download -->
+        <section>
+            <h2>Download My Resume</h2>
+            <a href="https://raw.githubusercontent.com/Raanasukumar/raanasukumar.github.io/9773c280bc3585c73a6bbe4a5dd0f8a15e3c1da7/docs/Raanasukumar_Resume.pdf
+" class="download-btn">Download PDF</a> <!-- Placeholder link for attachment -->
+        </section>
     </div>
 
     <footer>
         <p>&copy; 2025 Raanasukumar Muthyam</p>
+        <p><a href="https://www.linkedin.com/in/raanasukumar-muthyam" class="linkedin-link" target="_blank">LinkedIn Profile</a></p> <!-- Added LinkedIn link in footer -->
     </footer>
 </body>
 </html>
